@@ -1,0 +1,140 @@
+▷ 폼 구성하기
+	폼은 HTML에서 클라이언트 데이터를 수집하기 위해 사용한다.
+	클라이언트에게 정보를 입력받고 서버로 전송하기 위한 양식이라고 생각하면 좋다.
+	서버로 데이터를 전송하는 주요 수단이며, 여러가지 속성들이 존재하고,
+	다양한 HTML 요소를 포함할 수 있다.
+
+▶ form 태그
+	전체적인 폼 양식을 의미한다. 폼을 구성하는 모든 요소는 form 태그 안에 작성한다.
+	담백하게, form 태그 안에서 입력하는 모든 걸 서버 쪽으로 전송한다.
+
+	<form action="서버 주소(url)" method="전송 방식">
+		폼을 구성하는 요소
+	</form>
+
+	action
+		클라이언트가 입력한 폼 요소 안의 데이터를 전송할 url 주소를 작성한다.
+		서버를 배우기 전까진, #을 채워넣어놓자
+
+	method
+		입력받은 데이터를 서버로 전송할 때 전송 방식을 작성한다.
+
+▶ input 태그
+	가장 보편적이고 기본적인 데이터를 입력 받는 태그.
+		
+	<input type="" name="" value="">
+
+	type : 필수 속성, 어떤 유형으로 데이터를 입력 받을지를 정할 수 있다.
+	name : 해당 input 태그의 이름을 작성한다. 나중에 서버에서 해당 태그의 데이터를 받을 때, name 속성의 이름으로 데이터를 관리한다.
+	value : 초기값을 작성할 수 있다.
+	
+▶ label 태그
+	상호 작용 요소에 이름을 붙일 때 사용한다.
+	label 에 작성해준 이름만 클릭하더라도 요소 선택이 가능해진다.
+	시각장애인 웹을 이용할 때 사용하는 보조 도구인 스크린 리더기가 label 태그로 연결된 상호작용 요소를
+	쉽게 식별 할 수 있어서 웹 접근성 향상을 위해서도 필수로 사용하길 권장한다.
+
+▶ fieldset, legend 태그
+	fieldset 태그로 form 태그 내의 여러 상호 작용 요소들을 그룹으로 묶을 수 있다.
+	legend 태그를 이용해서 각 그룹의 이름을 붙일 수 있다.
+
+	<form>
+		<fieldset>
+			<legend>이름 설정</legend>
+				각종 상호 작용 요소들 추가!
+		<fieldset>
+	</form>
+
+▶ textarea 태그
+	input 태그는 기본적으로 한 줄로 입력하는 태그이다.
+	여러 줄의 입력 요소를 생성할 때 사용하는 것이 textarea 태그이다.
+
+	<textarea> 초기값 </textarea>
+
+▶ select 태그
+	셀렉 박스를 만들어주는 태그이다.
+	option과 optgroup 요소를 포함할 수 있다.
+	
+	<select>
+		<optgroup label="이름">
+		<option value="전송할 값">화면에 뿌려줄 텍스트</option>
+		</optgroup>
+	</select>
+
+	option 태그 : 셀렉박스에 목록을 추가할 때 사용하는 태그.
+	optgroup 태그 : 목록들을 그룹화할 수 있다. label 속성을 사용해서 그룹의 이름도 지정해줄 수 있다.
+
+	select 태그의 속성들
+		size : 화면에 보이는 목록의 갯수
+		multiple : 여러개의 목록을 선택가능 하도록 해주는 속성
+		selected : 화면을 처음 접속할 때 기본값을 설정
+
+▶ button 태그
+	input 타입 button 과 별도로 button 태그가 존재한다
+
+	<button type="타입"> 버튼 내용 </button>
+
+	submit : 서버에 내용을 전송하기 위한 버튼
+	reset : 입력된 내용 초기화 버튼
+	button : 일반 버튼
+
+▷ 폼 구성하기 관련 추가 속성
+
+▶ disabled, readonly 속성
+	disabled : 비활성화, 모든 상호 작용 요소에 사용 가능.
+	readonly : 읽기 전용, input(text, password, ...), textarea 에만 사용 가능.
+
+	disabled 을 준 요소는 서버로 데이터가 넘어가지 않고, 
+	readonly 인 요소의 데이터는 넘어간다.
+
+	<input ... disabled>, <input ... readonly> 등등으로 사용.
+
+▶ maxlength 속성
+	글자 수 제한
+	텍스트 관련된 요소들에 걸어줄 수 있는 속성이다.
+
+	<textarea maxlength="글자 수 제한"> </textarea>
+
+▶ placeholder 속성
+	상호작용 요소에 입력할 값에 대한 가이드를 클라이언트에게 제공할 수 있다.
+	
+	<input type="email" placeholder="ex)qkrclgh2@naver.com">
+
+▶ checked 속성
+	체크박스 타입의 상호작용 요소에 이미 체크가 된 상태로 표시할 수 있다.
+	
+	<input type="checkbox" checked>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

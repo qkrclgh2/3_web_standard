@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>label tag</title>
+</head>
+<body>
+    <form action="#">
+        <!-- 암묵적인 방법 -->
+        <label>
+            아이디
+            <input type="text">
+        </label>
+
+        <!-- 명시적인 방법 -->
+        <label for="userPw">비밀번호</label>
+        <input type="password" id="userPw">
+
+        <br>
+        <!-- 둘 다 -->
+        <label for="homeTown">
+            고향
+            <input type="text" id="homeTown">
+        </label>
+
+    </form>
+</body>
+</html>

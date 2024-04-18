@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input tag</title>
+    <style>
+        input {
+            display: block;
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <input type="text" value="아이디"><!-- 한 줄 텍스트 입력 -->
+        <input type="password"><!-- 비밀번호 입력 -->
+        <input type="tel"><!-- 전화번호 입력 -->
+        <input type="number"><!-- 숫자만 입력 -->
+        <input type="url"><!-- url 주소 형식만 입력 -->
+        <input type="search"><!-- 검색용 텍스트 -->
+        <input type="email"><!-- 이메일 형식 입력 -->
+        <input type="checkbox"><!-- 체크 박스 요소 -->
+        
+        <input type="radio" name="sort" value="이름순"> 이름순<!-- name을 같은 name으로하면 -->
+        <input type="radio" name="sort" value="최신순"> 최신순<!-- 한묶음으로 판단 -->
+        <input type="radio" name="sort" value="조회순"> 조회순<!-- 중복체크가 되지 않음 -->
+
+        <input type="file" multiple><!-- 파일 업로드시, multiple 여러개의 파일을 업로드 -->
+        <input type="button" value="버튼"><!-- 버튼요소 -->
+        <input type="image" src="../image/네이버로고.png" alt="네이버로고"><!-- 이미지로 버튼 생성 -->
+        <input type="color"><!-- 색상 선택 -->
+        <input type="date"><!-- 날짜 선택 -->
+        <input type="datetime-local"><!-- 시간대까지 입력 -->
+        <input type="month"><!-- 월 -->
+        <input type="week"><!-- 주 -->
+        <input type="time"><!-- 시간 -->
+        <input type="hidden"><!-- 우리 눈에 안보임. -->
+
+        <input type="range"><!-- 숫자 범위 설정 -->
+        <input type="reset"><!-- form 태그 내 상호 작용 요소 초기값으로 -->
+        <input type="submit" value="전송"> <!-- 폼 전송 역할을 하는 버튼 요소 생성 -->
+        
+
+    </form>
+
+</body>
+</html>

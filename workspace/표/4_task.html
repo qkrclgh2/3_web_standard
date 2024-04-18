@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+
+</head>
+<body>
+    <table>
+        <col style="width: 300px;">
+        <col style="width: 250px;">
+        <col style="width: 500px;">
+        <col style="width: 500px;">
+        <thead>
+            <tbody>
+            <tr>
+                <th scope="col">이름</th>
+                <th scope="col">나이</th>
+                <th scope="col">직업</th>
+                <th scope="col">국가</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>김철수</td>
+            <td rowspan="2">30</td>
+            <td>개발자</td>
+            <td rowspan="3">대한민국</td>
+        </tr>
+        <tr>
+            <td>이영희</td>
+            <td>디자이너</td>
+        </tr>
+        <tr>
+            <td>박영수</td>
+            <td>45</td>
+            <td>마케터</td>
+        </tr>
+        <tfoot>
+            <td colspan="4">프로젝트 팀</td>
+        </tfoot>
+        </tbody>
+    </table>
+</body>
+</html>

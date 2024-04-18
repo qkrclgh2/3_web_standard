@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table group</title>
+
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <table><!-- 표 시작 -->
+        <col style="width: 120px;">
+        <colgroup span="2" style="width: 300px;"></colgroup>
+        <col style="width: 80px;">
+        <caption>학생 관리 프로그램</caption>
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>학생명</th>
+                <th>점수</th>
+                <th>학점</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>1</td>
+            <td>류호근</td>
+            <td>49</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>강감찬</td>
+            <td>94</td>
+            <td rowspan="2">A</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>장보고</td>
+            <td>95</td>
+            <!-- 4행 4열은 3행 4열과 병합했으므로 생성하지 않는다. -->
+        </tr>
+        <tfoot>
+            <tr>
+                <td colspan="2">학생 정보</td>
+                <td colspan="2">학생 성적</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
