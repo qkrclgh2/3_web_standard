@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그룹 선택자</title>
+    <link rel="stylesheet" href="./2_selector-combinator.css">
+</head>
+<body>
+    <h1>그룹 선택자</h1>
+    <p class="color">class = color</p>
+    <p>기본 p 태그</p>
+
+    <h1>자식 선택자</h1>
+    <div id="temp1">
+        <p>temp1의 자식</p>
+        <div>
+            <p>temp1의 손주</p>
+        </div>
+        <p>temp1의 자식</p>
+    </div>
+
+    <h1>하위 선택자</h1>
+    <div class="temp2">
+        <p>temp2의 자식</p>
+        <ol>
+            <li>
+                <p>temp2 하위</p>
+            </li>
+            <li>
+                <p>temp2 하위</p>
+            </li>
+        </ol>
+    </div>
+    <p>temp2의 형제</p>
+
+    <h1>형제 선택자1</h1>
+    <p class="temp3">클래스 temp3</p>
+    <p>temp3의 바로 아래 형제</p>
+    <p>temp3의 바로 아래 아래 형제</p>
+
+    <h1>형제 선택자2</h1>
+    <p class="temp4">클래스 temp4</p>
+    <p>temp4의 바로 아래 형제</p>
+    <p>temp4의 바로 아래 아래 형제</p>
+</body>
+</html>

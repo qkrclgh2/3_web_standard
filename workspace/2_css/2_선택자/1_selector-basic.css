@@ -1,0 +1,24 @@
+/* 전체 요소를 선택하는 선택자 */
+/* *{
+    color:aqua;
+} */
+
+div{
+    color:cornflowerblue;
+}
+
+#idSelector{
+    color: red;
+}
+
+.classSelector{
+    background-color: aqua;
+}
+
+a[href] {
+    background-color: red;
+}
+
+a[target="_blank"] {
+    background-color: yellow;
+}

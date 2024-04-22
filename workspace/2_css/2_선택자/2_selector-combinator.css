@@ -1,0 +1,24 @@
+/* 그룹 선택자 */
+h1, p[class] {
+    color: red;
+}
+
+/* 자식 선택자 */
+#temp1 > p { /* p 대신 div 를 먹이면, 기본적으로 css 는 폭포처럼 상속됨. */
+    color: blue;
+} 
+
+/* 하위 선택자 */
+.temp2 p {
+    color: green;
+}
+
+/* 형제 선택자1 */
+.temp3 + p {
+    background-color: darkcyan;
+}
+
+/* 형제 선택자2 */
+.temp4 ~ p {
+    background-color: aquamarine;
+}

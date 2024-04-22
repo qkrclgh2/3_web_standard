@@ -1,0 +1,11 @@
+.class > .class2 {
+    color: red;
+}
+
+.class{
+    color: blue;
+}
+
+#id {
+    color: yellow;
+}

@@ -1,0 +1,41 @@
+/* 동적 가상 클래스 선택자 */
+span:hover {
+    background-color: hotpink;
+}
+
+span:active {
+    background-color: yellow;
+}
+
+/* a 태그 가상 클래스 선택자 */
+a:link {
+    background-color: darkgoldenrod;
+    color: black;
+}
+
+a:visited {
+    font-size: 49px;
+    background-color: white;
+    color: red;
+}
+
+/* input 태그 가상 클래스 선택자 */
+input[name="id"]:focus{
+    color: blue;
+    outline: 2px solid red;
+}
+
+input:checked + label {
+    color: mediumturquoise;
+    background-color: yellow;
+}
+
+input:disabled, button:disabled {
+    background-color: aqua;
+    color: red;
+}
+
+input:enabled, button:enabled {
+    background-color: green;
+    color: blue;
+}
