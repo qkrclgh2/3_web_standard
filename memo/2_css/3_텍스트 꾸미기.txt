@@ -1,0 +1,152 @@
+▷ 텍스트 스타일링
+	텍스트와 관련된 스타일 먹이는 속성, 값에 대해서 알아보자!
+
+▶ 단위
+	절대 단위 : px
+	상대 단위
+		- em : 부모 요소의 텍스트 크기에 대한 상대적인 크기
+		- rem : html 태그의 텍스트 크기에 대한 상대적인 크기
+		- vw : 뷰 포트의 너비를 기준으로 한 상대적인 크기
+		- vh : 뷰 포트의 높이를 기준으로 한 상대적인 크기
+		- % : 상위 요소의 속성값에 대한 상대적인 크기
+		
+▶ 색 설정
+	1) yellow, aqua, pink, red  등 단어 넣기
+	2) rgb(255, 255, 255) -> rgb 값으로 색 지정
+	3) rgba (255, 255, 255, 0.0) -> 투명도까지 지정
+	4) #ffffff -> HEX표기법
+
+▶ font-family 속성
+	글꼴을 지정할 수 있다.
+	글꼴 유형을 설정할 수 있는데 권장하는 편이다. 글꼴을 읽어오지 못하면 비슷한 유형으로 가져오기 위함.	
+
+	font-family : 글꼴 이름, 글꼴 유형
+
+	글꼴 유형
+	1) serif : 명조 계열
+	2) sans-serif : 고딕 계열
+	3) monospace : 폭과 간격 일정
+	4) fantasy : 화려
+	5) cursive : 필기체 계열
+
+▶ font-size 속성
+	텍스트 크기 지정
+
+	font-size : 20px, 1rem 등등
+	
+▶ font-weight 속성
+	텍스트 굵기 지정
+	
+	font-weight : 100 ~ 900 (100단위)
+	font-weight : lighter, normal, bold, bolder -> normal 과 bold 를 많이 사용.
+
+▶ font-style 속성
+	텍스트를 기울여 표현할 때 사용.
+
+	font-style : italic (oblique);
+	
+	italic : 글꼴에서 제공하는 기울여진 글꼴
+	oblique : 원래 글자를 그냥 기울여버림!
+
+▶ text-align 속성
+	텍스트 정렬
+	
+	text-align : 값; (left, center, right, justify)
+
+▶ text-decoration 속성
+	글자의 선을 그을 때 사용
+		
+	text-decoration : 값; (none, line-through, overline, underline)
+
+▶ line-height 속성
+	normal, 1, 100%, 20px
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

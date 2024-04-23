@@ -1,0 +1,81 @@
+▷ 박스 모델
+	각각의 요소가 어떤 원리로 웹에 배치되는지를 이해하기 위해서는 박스 모델에 대한 개념을 알아야 한다.
+	박스 모델은 요소를 감싸고 있는 사각형 형태의 공간을 말하며, 이 친구들을 이용해 원하는 곳에 배치할 수 있다.
+	
+	1) margin : 요소의 외부 여백
+	2) border : 요소의 테두리
+	3) padding : 요소의 내부 여백
+	4) content : 요소의 내용
+
+▶ margin, padding
+	요소의 외부, 내부 여백을 설정함으로 전체적인 요소의 배치를 설정할 수 있다.
+	
+	margin : 1 2 3 4 -> top, right, bottom, left
+	margin : 10 20 -> (top, bottom), (right, left)
+	margin-top, margin-right, margin-bottom, margin-left -> 각 속성도 존재.
+
+▶ border
+	요소의 테두리를 설정할 수 있다. 
+
+	border : (border-width), (border-style), (color);
+
+	border-width : 테두리 굵기
+	border-style : 테두리 스타일 (solid, double, dotted 등등)
+
+▶ content
+	width, height -> 높이와 너비를 설정할 수 있다.
+	단, 여기위 width와 height는 content 영역에 국한된다. 전체 요소의 너비와 길이가 아니다!
+	그 이유는 전체 크기는 padding, margin, border 를 합산하기 때문이다.
+	여기서 해당 요소의 크기를 width 와 height 만으로 조절하고 싶을 때
+	box-sizing 옵션을 사용할 수 있다.
+	
+	box-sizing : content-box, border-box
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

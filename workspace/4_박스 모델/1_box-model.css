@@ -1,0 +1,25 @@
+.margin, .padding {
+    width: 200px;
+    background-color: aqua;
+    text-align: center;
+    border: 2px solid blue;
+}
+
+/* 요소와 요소사이의 거리 */
+.margin {
+    margin-bottom: 30px ;
+}
+
+/* 요소 내부의 거리 */
+.padding {
+    padding: 10px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 10px;
+    box-sizing: border-box;
+}
