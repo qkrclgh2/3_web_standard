@@ -1,0 +1,101 @@
+▶ 배경 속성
+	background : 모든 배경 속성을 한 번에 지정할 수 있다.
+	background-color : 배경색 지정
+	background-image : 배경 이미지 삽입
+	background-repeat : 배경 이미지 반복 여부 지정
+	background-size : 배경 이미지의 크기 지정
+	background-position : 배경 이미지의 위치 지정
+
+▶ 위치 속성
+	HTML 요소의 흐름에서 벗어나 원하는 곳에 배치할 수 있는 속성
+	
+	position : 값;
+
+	1) static : 기본 흐름대로 배치
+	2) relative : 기본 흐름대로 배치하지만 좌표 속성은 사용가능 (top, right, bottom, left)
+	3) absolute : 절대적인 좌표 위치에 따라 배치
+	4) fixed : absolute + 스크롤해도 위치 고정
+	5) sticky : static과 동일하지만 임계점에 이르면 fixed 처럼 화면에 고정 (부모 내에서만 동작)
+
+▶ 전환 효과 속성
+    스타일 전환 효과를 설정할 수 있다.
+
+    1) transition-duration : 전환 효과의 지속 시간 설정
+    2) transition-delay : 전환 효과의 발생 지연 시간 설정
+    3) transition-timing-function : 진행 속도를 지정
+
+※ 반응형 웹을 위한 미디어 쿼리
+	미디어 쿼리란 해상도에 따라 다른 스타일 속성을 적용하는 기술이다.
+	속성은 min-width, max-width 등이 있다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

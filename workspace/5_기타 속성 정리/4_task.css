@@ -1,0 +1,55 @@
+html {
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 300px;
+    padding: 40px;
+    gap: 30px;
+    border-radius: 8px;
+    /* box-shadow 양수가 오른쪽, 양수가 아래쪽, 흐림정도, 번짐정도, 색상 */
+    box-shadow: 2px 4px 10px 10px rgba(0,0,0,0.1);
+}
+
+label, input, button {
+    width: 100%;
+    border-radius: 4px;
+    
+}
+
+input {
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid lightgray;
+}
+
+button {
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: deepskyblue;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

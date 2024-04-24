@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+}
+
+/* sticky는 부모요소 공간안에서 고정 */
+.back {
+    background-color: lightgrey;
+    width: 1000px;
+    height: 1000px;
+    top: 100px;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+}
+
+.red {
+    background-color: red;
+}
+
+.aqua {
+    background-color: aqua;
+    position: sticky;
+    left: 300px;
+    top: 0;
+
+    /* left: 300px;
+    top: 300px; */
+}
+
+.purple {
+    background-color: purple;
+    position: absolute;
+    top: 2000px;
+    left: 1000px;
+
+}
