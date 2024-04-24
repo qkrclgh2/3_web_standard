@@ -29,9 +29,43 @@
 	여기서 해당 요소의 크기를 width 와 height 만으로 조절하고 싶을 때
 	box-sizing 옵션을 사용할 수 있다.
 	
-	box-sizing : content-box, border-box
+	box-sizing : content-box
+	border-box (전체 크기를 width와 height로 조절 할 수 있고, border까지 설정된 크기가 되면서
+	content 부분이 상대적으로 줄어들거나 늘어난다.)
 
+▷ display 속성
+	display 속성은 요소가 HTML 문서 내에서 어떻게 표시되는지를 설정할 수 있다.
 
+	1) block : 요소가 블록 요소처럼 동작하게 한다.
+	2) inline : 요소가 인라인 요소처럼 동작하게 한다.
+	3) inline-block : 인라인 요소 처럼 너비가 콘텐츠의 크기만큼만 차지하지만 그 외의 성격은 블록 요소의 성격을 가진다.
+	4) none : 요소가 렌더링 되지 않으며, 문서 레이아웃에서 완전히 제거한다.
+	5) flex - 1차원 방식으로 레이아웃을 설계할 수 있고, 아이템을 유연하게 배치할 수 있다.
+	6) grid - 2차원 방식으로 레이아웃을 설계할 수 있고, 플렉스보다 더 폭넓게 레이아웃을 설계할 수 있다.
+
+▶ flex
+	- flex container
+		flex 레이아웃(display : flex;)을 적용한 요소에 의해 형성된다.
+
+	- flex item
+		플레스 컨테이너와 자식관계를 이루는 구성 요소이다.
+	- 주축 : 플렉스 요소의 진행 방향
+	- 교차축 : 주축과 수직되는 축
+
+	3_flex.html 과 css 에서 확인하기
+
+▶ grid
+	1. grid 컨테이너
+	2. grid 트랙
+		grid 컨테이너 내의 행이나 열을 말함.
+	3. grid 셀
+		grid의 기본 단위로, 한 개의 아이템이 차지하는 공간.
+	4. grid 라인
+		트랙을 구분하는 선. 레이아웃의 경계
+	5. grid 갭
+		행과 열 사이의 간격을 설정할 수 있다.
+
+	4_grid.html 에서 확인
 
 
 

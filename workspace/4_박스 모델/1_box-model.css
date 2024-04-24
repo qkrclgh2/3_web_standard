@@ -20,6 +20,7 @@
     height: 100px;
     padding: 10px;
     border: 2px solid black;
+    border-radius: 4px; /* 둥글둥글 */
     margin: 10px;
     box-sizing: border-box;
 }

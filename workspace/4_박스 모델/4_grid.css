@@ -1,0 +1,42 @@
+.grid-container {
+    background-color: lightgray;
+    display: grid;
+
+    /* 행과 열의 크기와 갯수를 설정. */
+    /* grid-template-rows: 100px 100px;
+    grid-template-columns: 100px 100px; */
+
+    /* grid-template-rows: 100px auto;
+    grid-template-columns: 100px auto; */
+
+    /* grid-template-rows: repeat(2, 100px);
+    grid-template-columns: repeat(6, 100px); */
+
+    /* fractional unit 부모 컨테이너의 남은 공간에 따라 유동적으로 조절 */
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(4, 100px);
+
+    /* 셀 간의 간격 */
+    grid-gap: 10px;
+
+    /* 가로 방향으로 정렬 */
+    justify-items: stretch;
+
+    /* 세로 방향으로 정렬 */
+    align-items: stretch;
+
+    /* 아이템들 전체 정렬 */
+    justify-content: space-around;
+}
+
+.grid-item {
+    background-color: darkblue;
+    border: 2px solid aqua;
+    font-size: 16px;
+    text-align: center;
+    /* line-height: 50px; */
+    /* width: 50px; */
+    margin: 8px;
+    color: white;
+
+}

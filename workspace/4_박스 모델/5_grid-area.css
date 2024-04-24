@@ -1,0 +1,43 @@
+html, body, p {
+    margin: 0px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "sidebar content content"
+    "footer footer footer";
+    height: 100vh;
+}
+
+#header {
+    grid-area: header;
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sidebar {
+    grid-area: sidebar;
+    background-color: aqua;
+    text-align: center;
+    font-size: 50px;
+    line-height: 200px;
+}
+
+#content {
+    grid-area: content;
+    background-color: green;
+    text-align: center;
+}
+
+#footer {
+    grid-area: footer;
+    background-color: darkgray;
+    text-align: center;
+}
