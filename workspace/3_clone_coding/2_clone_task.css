@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+}
+
+body {
+    display: block;
+    background-color: #06f;
+}
+
+a{
+    text-decoration: none; /* a 태그 밑줄 제거 */
+}
+
+#header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 4.75rem;
+    font-size: .875rem;
+    background: #06f;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+    height: 4.75rem;
+    padding: 0 1.25rem;
+    color: #fff;
+}
+
+#logo {
+    width: 11.125rem;
+}
+
+.corporation-service {
+    color: white;
+}
+
+.main-service {
+    display: flex;
+    justify-content: center;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: auto 468px;
+    width: 1200px;
+    height: 100%;
+    padding: 0 1.25rem;
+}
+/* 왼쪽 부분 */
+.left-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+}
+/* 왼쪽 멘트 */
+.left-content-ment {
+    color: white;
+    margin-top: 110px;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+/* 로그인 왼쪽 사진 */
+#left-img {
+    width: 80%;
+    max-width: 31.25rem;
+}
+
+.right-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.login-section {
+    width: 100%;
+    margin-bottom: 6.75rem;
+    background-color: #f9fafb;
+    border: 1px solid #d7d7d7;
+    border-radius: .9375rem;
+}
+
+.login-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.login-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+    color: black;
+    text-align: center;
+    letter-spacing: -0.15px;
+}
+
+.login-id-pw {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.login-id-pw > input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.login-new {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.login-new > button {
+    background-color: lightgray;
+    color: white;
+}
