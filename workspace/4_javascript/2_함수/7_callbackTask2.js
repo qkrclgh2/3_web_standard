@@ -6,22 +6,27 @@ let products = [
 ]
 
 // 함수를 정의한다.
-// 해당 배열을 전달하면
+// 해당 배열을 전달하면 
 // 품목 객체를 새롭게 리턴 받아보자.
 // 예시 : 품목:마우스, 총가격:250000
 // 매개변수로 마우스와 callback 함수를 전달받는 함수.
 // 콜백 -> 품목 이름이 넘어온걸로 가격과 수량을 구해서
 // 두 수를 곱해서 리턴해주는 친구를 만들어라.
-for(pro of products){
-    if(pro.품목 == '마우스'){
-        
+function test(proName, callback){
+    let total = callback(proName);
+    let result = {
+        품목 : proName,
+        총가격 : total
     }
+    return result;
 }
 
-function task2(callback) {
-    for(let i=0; i<=products[i]; i++) {
-        if(i == products[i]){
-            
+function getTotal(proName){
+    for(pro of products){
+        if(pro.품목 == proName){
+            return pro.가격 * pro.수량
         }
     }
 }
+
+console.log(test('마우스', getTotal));
