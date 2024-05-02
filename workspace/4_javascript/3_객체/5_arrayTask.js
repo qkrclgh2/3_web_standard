@@ -8,7 +8,7 @@ let users = [
 // 단, 30살 이하인 사람들의 정보만 출력해보자! 자유롭게!
 
 // 가이드는, 한 줄만 작성하면 된다.
-
+users.filter(user => user.age <= 30).forEach(user => printInfo(user, len))
 // 함수 정의
 // 매개변수로 넘어온 객체의 이름과 나이를 출력하는 함수 정의.
 // 출력 예시

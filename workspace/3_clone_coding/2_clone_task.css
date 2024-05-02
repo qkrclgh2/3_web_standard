@@ -144,3 +144,49 @@ h1 {
     background-color: lightgray;
     color: white;
 }
+
+.pw-re {
+    text-decoration: underline;
+    text-align: right;
+}
+
+.ment {
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+    justify-content: center;
+    width: 100%;
+    margin-top: 48px;
+    text-align: center;
+}
+
+.ment > a {
+    gap: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    color: black;
+}
+
+.button-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 52px;
+    height: 52px;
+    border: 0;
+}
+
+.ment > a > img {
+    align-items: center;
+}
+
+.footer-ment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 3.75rem;
+    font-size: .9375rem;
+}
