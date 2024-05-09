@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="2_selectEl.css">
+</head>
+<body>
+    <form name="loginForm" id="login-form">
+        <h2>로그인 폼</h2>
+        <label for="uname">이름:</label>
+        <input type="text" id="uname" name="uname" placeholder="이름을 입력하세요">
+
+        <label for="age">나이:</label>
+        <input type="text" id="age" name="age" placeholder="나이를 입력하세요">
+
+        <label for="gender">성별:</label>
+        <select id="gender" name="gender">
+            <option value="male">남성</option>
+            <option value="female">여성</option>
+        </select>
+
+        <!-- 이벤트 리스너를 사용해야함. -->
+        <button type="submit" onclick="check(event)">전송</button>
+    </form>
+</body>
+<script src="2_selectEl.js"></script>
+</html>

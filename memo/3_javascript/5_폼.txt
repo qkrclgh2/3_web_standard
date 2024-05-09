@@ -1,0 +1,76 @@
+▷ 폼 조작하기
+
+▶ form 태그 선택하기
+	1) document 의 forms 속성을 이용하여 선택
+		- document.forms[0]
+	2) form 태그의 name 속성을 이용하여 선택 ★
+		- document.loginForm
+
+▶ form 태그 내 요소 선택하기
+	1) elements 로 요소 배열 가지고 오기
+		- document.loginForm.elements[0]
+		- document.loginForm.elements['idInput'] // name이 idInput 인 요소
+
+	2) 요소의 name 속성을 이용하여 선택 ★
+		- document.loginForm.idInput // name이 idInput 인 요소
+
+▶ 입력 요소 내의 값 가져오기
+	value 속성
+		- document.loginForm.pwInput.value
+
+	이 방법을 이용하여 유효성 검사를 진행한다. 
+
+▶ 기타
+	checked 속성 : checkbox, radio 의 옵션 선택을 제어
+	selected 속성 : select 태그의 옵션 선택을 제어
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
