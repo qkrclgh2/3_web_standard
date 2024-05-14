@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네비게이션바 실습</title>
+    <style>
+        /* 네비게이션 바 스타일 */
+        #nav {
+            width: 100%;
+            background-color: #4CAF50;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        /* 드롭다운 메뉴 컨테이너 스타일 */
+        #dropdownContainer {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+            border-top: 1px solid #ddd;
+            display: none;
+            padding: 10px 0;
+        }
+
+        /* 드롭다운 메뉴 아이템 스타일 */
+        .dropdownItem {
+            padding: 10px 20px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            width: 80%;
+            margin: 5px auto;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .dropdownItem:hover {
+            background-color: #d4d4d4;
+        }
+    </style>
+</head>
+<body>
+    <nav id="nav">올리면 메뉴가 나옵니다.</nav>
+    <div id="dropdownContainer">
+        <div class="dropdownItem">수강신청</div>
+        <div class="dropdownItem">강의목록</div>
+        <div class="dropdownItem">강사 소개</div>
+        <div class="dropdownItem">오시는 길</div>
+    </div>
+</body>
+<script>
+    // 사용할 노드 선택
+    let nav = document.getElementById('nav');
+    let dropdownContainer = document.getElementById('dropdownContainer');
+
+    // nav 위로 마우스를 올릴 때 드롭다운 메뉴 보이기.
+    nav.addEventListener('mouseover', () => {
+        dropdownContainer.style.display = 'block';
+    });
+
+    // // 드롭다운 컨테이너로 마우스가 올라가면 계속 block 상태 유지
+    // dropdownContainer.addEventListener('mouseover', () => {
+    //     dropdownContainer.style.display = 'block';
+    // });
+
+    // 마우스가 드롭다운 컨테이너 밖으로 나가면 메뉴 감추기
+    dropdownContainer.addEventListener('mouseleave', () => {
+        dropdownContainer.style.display = 'none';
+    })
+
+    // 마우스가 nav 밖으로 나가면 메뉴 감추기
+    nav.addEventListener('mouseleave', () => {
+        setTimeout(function(){
+            if(!dropdownContainer.matches(':hover')){
+            dropdownContainer.style.display = 'none';
+            }
+        }, 1000);
+    })
+
+</script>
+</html>

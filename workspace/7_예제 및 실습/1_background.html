@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>클릭 이벤트 실습</title>
+    <style>
+         #colorBox {
+            width: 500px;
+            height: 200px;
+            background-color: lightgray;
+            margin: 20px auto;
+            text-align: center;
+            line-height: 200px;
+            font-size: 18px;
+        }
+
+        #changeBtn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #changeBtn:hover {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div id="colorBox">색 변경을 클릭하면 색이 랜덤으로 바뀝니다.</div>
+    <button id="changeBtn">색 변경</button>
+</body>
+<script>
+    document.getElementById('changeBtn').addEventListener('click', () => {
+        // 16777215 24비트 색상의 최댓값
+        // toString(16) -> 16진수 문자열로 변환
+        let randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+        let colorBox = document.getElementById('colorBox')
+        colorBox.style.backgroundColor = randomColor;
+        colorBox.textContent = '색 : ' + randomColor;
+        this.style.backgroundColor = randomColor;
+    })
+</script>
+</html>

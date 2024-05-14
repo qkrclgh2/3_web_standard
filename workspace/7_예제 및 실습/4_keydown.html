@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>키다운 이벤트</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #keyInfo {
+            text-align: center;
+            padding: 20px;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        #keyStatus {
+            text-align: center;
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="keyInfo">키보드를 눌러봐!</div>
+    <div id="keyStatus">누르기 전</div>
+</body>
+<script>
+    let keyInfo = document.getElementById('keyInfo');
+    let keyStatus = document.getElementById('keyStatus');
+
+    document.addEventListener('keydown', function(event){
+        keyInfo.innerText = 'Key Pressed: ' + event.key + ' (Code: ' + event.keyCode + ')';
+        keyStatus.innerText = '누르는 중';
+        keyStatus.style.backgroundColor = 'green';
+    })
+
+    document.addEventListener('keyup', function(){
+        keyStatus.innerText = '누르기 전';
+        keyStatus.style.backgroundColor = 'blue';
+    });
+    
+</script>
+</html>

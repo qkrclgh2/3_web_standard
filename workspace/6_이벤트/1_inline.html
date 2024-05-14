@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline event</title>
+</head>
+<body>
+    <button onclick="clickEvent()">클릭</button>
+    <button onmouseover="overEvent()" onmouseout="outEvent()">마우스 올리고, 떼보세요</button>
+</body>
+<script>
+    function clickEvent() {
+        alert("click");
+    }
+
+    function overEvent() {
+        console.log('마우스가 올라왔어요!')
+    }
+
+    function outEvent() {
+        console.log("마우스가 갔어요!");
+    }
+
+</script>
+</html>

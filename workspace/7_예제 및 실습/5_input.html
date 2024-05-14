@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인풋 이벤트</title>
+</head>
+<body>
+    <input type="text" id="input">
+    <div id="count"></div>
+</body>
+<script>
+    // 기본적인 input 이벤트 확인!
+    // const input = document.getElementById('input');
+    // input.addEventListener('input', function(e){
+    //     // 이벤트 객체에서 target 속성을 이용해, 노드로 접근할 수 있다.
+    //     // console.log(e.target.value.length);
+    // });
+
+    const input = document.getElementById('input');
+    const count = document.getElementById('count');
+
+    input.addEventListener('input', function(){
+        count.innerText = input.value.length;
+    });
+</script>
+</html>

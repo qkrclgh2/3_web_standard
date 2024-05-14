@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEventListener</title>
+</head>
+<body>
+    <button>클릭</button>
+    <button onclick=history.back()>뒤로가기</button>
+</body>
+<script>
+    const btnEl = document.querySelector('button');
+    btnEl.addEventListener('click', () => {
+        alert('클릭!');
+    });
+</script>
+</html>
